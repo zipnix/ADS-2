@@ -1,5 +1,20 @@
 # Алгоритмы и структуры данных (ADS-2)
 
+
+![GitHub pull requests](https://img.shields.io/github/issues-pr/NNTU-CS/ADS-2)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/NNTU-CS/ADS-2)
+
+
+
+
+Сроки выполнения задания:
+
+- **ИСТ-1,4** - **до 8 апреля** ![Relative date](https://img.shields.io/date/1617829200)
+- **ИСТ-3** - **до 13 апреля** ![Relative date](https://img.shields.io/date/1618261200)
+- **ИСТ-2** - **до 20 апреля** ![Relative date](https://img.shields.io/date/1618866000)
+
+За присланные работы после указанных сроков, оценки будут снижены!
+
 ## Задание
 
 > Написать 3 реализации алгоритма поиска всех уникальных пар целочисленных элементов в массиве, в сумме дающих заданное число
