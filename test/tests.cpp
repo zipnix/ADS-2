@@ -12,14 +12,14 @@ int countPairs1(int *arr, int len, int value);
 int countPairs2(int *arr, int len, int value);
 int countPairs3(int *arr, int len, int value);
 
-void generateSorted(int *arr, int min, int max,int len) {
-    int value = 0, j=0;
+void generateSorted(int *arr, int min, int max, int len) {
+    int value = 0, j = 0;
     for (int i = 0; i < len; i++) {
         value = min + rand() % (max - min + 1);
         j = i - 1;
-        while (j >= 0 && arr[j]>value) {
+        while (j >= 0 && arr[j] > value) {
             arr[j + 1] = arr[j];
-            j--; 
+            j--;
         }
         arr[j + 1] = value;
     }
@@ -40,7 +40,7 @@ TEST(lab2, test2) {
     generateSorted(arr, 0, 100, ARRSIZE2);
     int count1 = countPairs1(arr, ARRSIZE2, 50);
     int count2 = countPairs2(arr, ARRSIZE2, 50);
-    int count3 = countPairs3(arr, ARRSIZE2,50);
+    int count3 = countPairs3(arr, ARRSIZE2, 50);
     EXPECT_TRUE((count1 == count2) && (count1 == count3) && (count2 == count3));
     delete[] arr;
 }
