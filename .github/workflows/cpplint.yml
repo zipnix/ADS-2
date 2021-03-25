@@ -4,9 +4,9 @@ name: cpplint
 on: [push, pull_request]
 jobs:
   cpplint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
     - run: pip install cpplint
-    - run: cpplint --filter=-build/include_subdir,-whitespace/comments --recursive .
+    - run: cpplint --filter=-build/include_subdir,-whitespace/comments,-runtime/threadsafe_fn --recursive .
