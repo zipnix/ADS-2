@@ -11,7 +11,7 @@
 
 - **ИСТ-1,4** - **до 8 апреля** ![Relative date](https://img.shields.io/date/1617829200)
 - **ИСТ-3** - **до 13 апреля** ![Relative date](https://img.shields.io/date/1618261200)
-- **ИСТ-2** - **до 20 апреля** ![Relative date](https://img.shields.io/date/1618866000)
+- **ИСТ-2** - **до 25 апреля** ![Relative date](https://img.shields.io/date/1619384400)
 
 За присланные работы после указанных сроков, оценки будут снижены!
 
