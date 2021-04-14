@@ -7,7 +7,7 @@ int countPairs1(int *arr, int len, int value) {
         score++;
     }
   }
- return score;
+  return score;
 }
 
 int countPairs2(int *arr, int len, int value) {
@@ -41,8 +41,7 @@ int countPairs3(int *arr, int len, int value) {
       center = (left + right) / 2;
       if (arr[center] < value - arr[i]) {
         left = center + 1;
-      }
-      else right = center;
+      } else right = center;
     }
     while (arr[left] == value - arr[i]) {
       score++;
