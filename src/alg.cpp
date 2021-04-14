@@ -25,11 +25,15 @@ int countPairs2(int *arr, int len, int value) {
 
 int countPairs3(int *arr, int len, int value) {
   int score = 0, left = 0, right, center;
-  for (int i = len - 1; i >= 0; i--) {
-    if (arr[i] <= value) {
-      len = i;
-      break;
-      }
+   while (left < right - 1) {
+    center = (left + right) / 2;
+    if (arr[center] > value) {
+      right = center;
+    } else if (arr[center] <= value) {
+      left = center;
+    }
+  }
+  len = right;
   for (int i = 0; i < len - 1; i++) {
     left = i + 1;
     right = len - 1;
