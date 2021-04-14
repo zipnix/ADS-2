@@ -8,10 +8,7 @@ int countPairs1(int *arr, int len, int value) {
         score++;
     }
   }
-  if (score)
-    return score;
-  else
-    return 0;
+ return score;
 }
 
 int countPairs2(int *arr, int len, int value) {
@@ -23,10 +20,7 @@ int countPairs2(int *arr, int len, int value) {
       }
     }
   }
-  if (score)
     return score;
-  else
-    return 0;
 }
 
 int countPairs3(int *arr, int len, int value) {
@@ -50,8 +44,5 @@ int countPairs3(int *arr, int len, int value) {
         score++;
         left++;
       }
-  if (score)
-    return score;
-  else
-    return 0;
+  return score;
 }
