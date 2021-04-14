@@ -12,7 +12,7 @@ int countPairs1(int *arr, int len, int value) {
 }
 
 int countPairs2(int *arr, int len, int value) {
-   int score = 0;
+  int score = 0;
   for (int i = len - 1; i >= 0; i--) {
     if (arr[i] <= value) {
       for (int j = 0; j < i; j++) {
